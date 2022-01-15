@@ -1,0 +1,155 @@
+/* common style */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header style */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar{
+    color: white;
+    background-color: 	#010048;
+    height: 94px;
+    border: none;
+    border-radius: 2px;
+    padding: 0 100px 0 100px;
+}
+.nav-bar p{
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav-bar .menu{
+    display: flex;
+    align-items: center;  
+}
+.nav-bar .menu ul{
+    list-style: none;
+}
+.nav-bar .menu ul li{
+    font-size: 16px;
+    font-weight: 700;
+}
+.nav-bar .menu ul li a{
+    color: white;
+    align-items: center;
+    text-decoration: none; 
+    margin-right: 20px;  
+}
+.nav-bar .menu i{
+    margin-right: 20px;
+}
+/* header style */
+/* main style*/
+.intro{
+    display: flex;
+}
+h1{
+    font-size: 52px;
+    color:	#03002e;
+}
+h2{
+    font-size: 30px;
+    color:	#03002e;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+}
+.intro-description{
+    width: 50%;
+    padding-left: 100px;
+}
+.intro-pic{
+    width: 40%;
+    padding-left: 100px;
+   
+}
+button{
+    color: white;
+    font-weight: 700;
+    height: 44px;
+    width: 196px;
+    background-color: #c92e0b;
+    border: 0;
+    border-radius: 25px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collection{
+    width: 100%;
+    padding: 0 200px 0 200px;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.productions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.production{
+    box-shadow: 5px 5px 40px gray;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+.product-pic{
+
+    height: 256px;
+    width: 300px;
+
+}
+.product-details{
+    padding-left: 15px;
+}
+.fa-star{
+    font-size: 16px;
+    color:#FB8200;
+}
+.fa-star.empty{
+    color:gray;
+}
+.no-border{
+    float: right;
+    color: #d3220b;
+    font-weight: 700;    
+    padding-right: 10px;
+}
+.new-product img{
+    height: 270px;
+    width: 404px;
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-bar{
+    height: 180px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: 	#010048;
+    border: none;
+    border-radius: 2px;
+    padding: 0 100px 0 100px;
+}
+footer h3{
+    color: white;
+}
