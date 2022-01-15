@@ -4,20 +4,36 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+h1{
+    font-size: 52px;
+    color:	#03002e;
+}
+h2{
+    font-size: 38px;
+    color:	#03002e;
+    text-align: center;
+}
+h3{
+    font-size: 28px;  
+}
+p{
+    font-size: 16px;
+}
 
 /* header style */
 nav{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .nav-bar{
     color: white;
+    width: 100%;
     background-color: 	#010048;
     height: 94px;
     border: none;
     border-radius: 2px;
     padding: 0 100px 0 100px;
+    align-items: center;
+    justify-content: space-between;
 }
 .nav-bar p{
     font-size: 24px;
@@ -43,34 +59,20 @@ nav{
 .nav-bar .menu i{
     margin-right: 20px;
 }
-/* header style */
-/* main style*/
-.intro{
+/* header style end */
+/* intro style start*/
+
+.introductions{
     display: flex;
-}
-h1{
-    font-size: 52px;
-    color:	#03002e;
-}
-h2{
-    font-size: 30px;
-    color:	#03002e;
-    text-align: center;
-}
-h3{
-    font-size: 20px;
-}
-p{
-    font-size: 16px;
+    flex-direction: columns;
 }
 .intro-description{
-    width: 50%;
+    width: 60%;
     padding-left: 100px;
 }
 .intro-pic{
-    width: 40%;
-    padding-left: 100px;
-   
+    width: 30%;
+    padding-right: 100px;
 }
 button{
     color: white;
@@ -78,41 +80,48 @@ button{
     height: 44px;
     width: 196px;
     background-color: #c92e0b;
-    border: 0;
     border-radius: 25px;
-}
 
+}
+button:hover{
+    background-color:#010048 ;
+    transition: 2s ease-in-out;
+}
+hr{
+    border: 1px solid gray;
+}
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+   
 }
-.collection{
-    width: 100%;
-    padding: 0 200px 0 200px;
-    box-shadow: 1px 1px 5px gray;
+/* intro style end */
+/* products collection style */
+.productions{
+    width: 80%;
     border-radius: 5px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 50px;
 }
-.productions{
+.productions{ 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 50px;
 }
 .production{
     box-shadow: 5px 5px 40px gray;
-    margin-right: 5%;
-    margin-bottom: 5%;
     border-radius: 10px;
+    margin: 10px 20px;
 }
-.product-pic{
-
-    height: 256px;
-    width: 300px;
-
+.product-pic img{
+    width: 100%;
+    border-radius: 5px;
 }
 .product-details{
     padding-left: 15px;
@@ -124,21 +133,44 @@ main{
 .fa-star.empty{
     color:gray;
 }
-.no-border{
-    float: right;
+.no-border-button{
     color: #d3220b;
     font-weight: 700;    
     padding-right: 10px;
+    float: right;
+    justify-content: space-between;
 }
-.new-product img{
-    height: 270px;
-    width: 404px;
+/* product collection style end */
+/* last section start*/
+.notification{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin-bottom: 0px;
+    align-items: center; 
+}
+.product{
+    width: 30%;
+}
+.product img{
+    height: 210px;
+    width: 100%;
     border-radius: 5px;
+    padding-left: 10px;
 }
+.service{
+    width: 60%;
+    padding-right: 0;
+    padding-left: 10px;
+    
+}
+/* last section end */
+
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px ;
 }
 .footer-bar{
     height: 180px;
@@ -152,4 +184,32 @@ footer{
 }
 footer h3{
     color: white;
+}
+/* Media Qurie */
+/*----------------
+ For Mobile Device 
+ ------------------*/
+ @media only screen and (max-width:688px){
+    .container{
+        width:100%;
+    } 
+    
+    .introductions, .productions, .notification{
+         grid-template-columns: repeat(1, 1fr);
+     } 
+       
+     .productions{
+        flex-direction: column;
+     }
+ }
+ @media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width:100%;
+    } 
+    .introductions, .notification{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .productions{
+    grid-template-columns: repeat(2, 1fr);
+ }
 }
