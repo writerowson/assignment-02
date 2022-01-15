@@ -16,9 +16,7 @@ h2{
 h3{
     font-size: 28px;  
 }
-p{
-    font-size: 16px;
-}
+
 
 /* header style */
 nav{
@@ -26,7 +24,6 @@ nav{
 }
 .nav-bar{
     color: white;
-    width: 100%;
     background-color: 	#010048;
     height: 94px;
     border: none;
@@ -64,7 +61,6 @@ nav{
 
 .introductions{
     display: flex;
-    flex-direction: columns;
 }
 .intro-description{
     width: 60%;
@@ -105,7 +101,6 @@ main{
     align-items: center;
     justify-content: space-around;
     margin-top: 30px;
-    margin-bottom: 80px;
     margin-left: 50px;
 }
 .productions{ 
@@ -136,41 +131,40 @@ main{
 .no-border-button{
     color: #d3220b;
     font-weight: 700;    
-    padding-right: 10px;
+    padding-right: 100px;
     float: right;
     justify-content: space-between;
 }
 /* product collection style end */
 /* last section start*/
-.notification{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 90%;
-    margin-bottom: 0px;
-    align-items: center; 
+.registration{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-.product{
-    width: 30%;
+#product {
+    width: 20%;
+    padding-left: 100px; 
+    float: left;
 }
-.product img{
-    height: 210px;
-    width: 100%;
+#product img{
     border-radius: 5px;
-    padding-left: 10px;
 }
-.service{
+#service{
     width: 60%;
-    padding-right: 0;
-    padding-left: 10px;
-    
+    padding-left: 100px; 
+    padding-right: 100px;
+    float: right;
 }
+
 /* last section end */
 
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px ;
+  
 }
 .footer-bar{
     height: 180px;
@@ -193,8 +187,7 @@ footer h3{
     .container{
         width:100%;
     } 
-    
-    .introductions, .productions, .notification{
+    .introductions, .productions, .registration{
          grid-template-columns: repeat(1, 1fr);
      } 
        
@@ -206,7 +199,7 @@ footer h3{
     .container{
         width:100%;
     } 
-    .introductions, .notification{
+    .introductions, .registration{
         grid-template-columns: repeat(1, 1fr);
     }
     .productions{
