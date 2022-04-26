@@ -3,7 +3,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
+
 h1{
     font-size: 52px;
     color:	#03002e;
@@ -21,6 +23,7 @@ h3{
 /* header style */
 nav{
     display: flex;
+    position: relative;
 }
 .nav-bar{
     color: white;
@@ -67,7 +70,7 @@ nav{
     padding-left: 100px;
 }
 .intro-pic{
-    width: 30%;
+    display: flex;
     padding-right: 100px;
 }
 button{
@@ -195,7 +198,7 @@ footer h3{
         flex-direction: column;
      }
  }
- @media only screen and (min-width:688px) and (max-width:992px){
+ @media only screen and (min-width:689px) and (max-width:992px){
     .container{
         width:100%;
     } 
